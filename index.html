@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mori 食光研究所，精選甜點、手作餅乾與日常咖啡。">
+  <meta name="theme-color" content="#fff8f4">
+  <title>Mori 食光研究所｜甜點選物店</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+:root{--ink:#39332f;--muted:#887d75;--pink:#d98294;--pink-dark:#b85f76;--cream:#fffaf6;--paper:#f7f0e9;--line:#e9dfd7;--green:#77866d;--shadow:0 18px 55px rgba(67,49,37,.09)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--cream);color:var(--ink);font-family:'Noto Sans TC',sans-serif;font-size:14px}button,input,textarea,select{font:inherit}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}.announcement{text-align:center;padding:9px 12px;background:#efc9cf;color:#68474c;font-size:10px;letter-spacing:.08em}.site-header{min-height:80px;padding:12px 6%;display:flex;align-items:center;justify-content:space-between;gap:18px;background:rgba(255,250,246,.95);position:sticky;top:0;z-index:10;border-bottom:1px solid rgba(233,223,215,.7);backdrop-filter:blur(14px)}.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}.brand-mark{width:38px;height:38px;border-radius:50%;background:var(--pink);color:white;display:grid;place-items:center;font:italic 27px Georgia}.brand strong{display:block;font-size:14px;letter-spacing:.06em}.brand small{display:block;font-size:8px;color:var(--muted);letter-spacing:.16em;margin-top:4px}.main-nav,.header-actions{display:flex;align-items:center;gap:22px}.main-nav{color:#6e655e;font-size:11px}.main-nav a:hover,.text-link:hover{color:var(--pink-dark)}.header-actions{gap:12px}.text-action{border:0;background:transparent;cursor:pointer;color:#6f655e;font-size:11px;padding:8px 0;white-space:nowrap}.text-action:hover{color:var(--pink-dark)}.cart-button{background:transparent;border:1px solid var(--line);border-radius:30px;padding:8px 13px;cursor:pointer;font-size:11px;white-space:nowrap}.cart-button span{display:inline-grid;place-items:center;background:var(--pink);color:white;border-radius:50%;width:21px;height:21px;margin-left:5px}.hero{min-height:540px;padding:58px 9% 50px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:5%;position:relative;overflow:hidden;background:radial-gradient(ellipse at 80% 25%,#f4e4dc 0,transparent 42%),var(--cream)}.hero-copy{padding-bottom:25px;z-index:1}.eyebrow{font-size:9px;letter-spacing:.22em;color:var(--pink-dark);font-weight:700}.hero h1{font-size:clamp(34px,4.3vw,55px);line-height:1.45;letter-spacing:.035em;margin:20px 0}.hero h1 em{font-family:'DM Serif Display',serif;color:var(--pink-dark);font-weight:400}.hero-copy>p{line-height:2;color:var(--muted);max-width:400px;font-size:12px}.primary-button{display:inline-flex;align-items:center;gap:26px;background:var(--ink);color:white;border:0;border-radius:3px;padding:14px 21px;margin-top:18px;font-size:11px;cursor:pointer;transition:.2s}.primary-button:hover,.checkout-button:hover{background:var(--pink-dark);transform:translateY(-1px)}.hero-note{font-size:10px;color:var(--muted);margin-top:28px;letter-spacing:.05em}.note-dot{display:inline-block;width:7px;height:7px;background:var(--green);border-radius:50%;margin-right:8px}.hero-art{position:relative;max-width:490px;justify-self:end;width:100%;padding:0 10px 18px 0}.hero-art>img{width:100%;height:360px;object-fit:cover;border-radius:48% 48% 5px 5px;box-shadow:var(--shadow)}.floating-card{position:absolute;bottom:45px;left:-35px;background:#fffdf9;padding:16px 20px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:5px;min-width:180px}.floating-card span,.floating-card small{font-size:10px;color:var(--muted)}.floating-card strong{font-size:13px}.hero-sticker{position:absolute;right:-5px;top:15px;background:#e8c8b6;color:#6b4a3d;border-radius:50%;width:76px;height:76px;display:grid;place-content:center;text-align:center;font:italic 13px Georgia;transform:rotate(10deg)}.hero-bottom{position:absolute;bottom:14px;left:9%;right:9%;display:flex;justify-content:space-between;color:#a49a8f;font-size:8px;letter-spacing:.2em}.hero-bottom span{color:var(--pink);font-size:17px}.benefit-strip{display:flex;justify-content:center;gap:clamp(30px,8vw,110px);padding:23px 6%;border-bottom:1px solid var(--line);border-top:1px solid var(--line);background:#fffdf9}.benefit-strip>div{display:grid;grid-template-columns:26px auto;align-items:center;column-gap:9px}.benefit-strip>div>span{grid-row:span 2;color:var(--pink-dark);font-size:20px}.benefit-strip strong{font-size:11px}.benefit-strip small{font-size:9px;color:var(--muted);margin-top:3px}.category-section,.products-section{padding:70px 9% 15px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:20px}.section-heading h2,.story-copy h2,.newsletter-section h2,.coupon-intro h2{font-size:clamp(23px,3vw,31px);letter-spacing:.04em;margin:10px 0 0;line-height:1.5}.section-heading>p{font-size:11px;color:var(--muted);margin-bottom:4px}.category-list{display:flex;flex-wrap:wrap;gap:10px;margin:25px 0 32px}.category-chip{border:1px solid var(--line);background:transparent;border-radius:30px;padding:10px 17px;color:#6f665e;cursor:pointer;font-size:10px;transition:.2s}.category-chip:hover,.category-chip.active{background:#f1dfe1;border-color:#f1dfe1;color:#754d52}.products-section{padding-top:35px;padding-bottom:75px}.products-heading{margin-bottom:28px}.tiny-flower{color:var(--pink);font-size:16px}.search-box{display:flex;align-items:center;gap:8px;border-bottom:1px solid #d8ccc3;padding:8px 0;min-width:210px;color:var(--pink-dark)}.search-box span{font-size:24px}.search-box input{border:0;outline:0;background:transparent;width:100%;font-size:11px;color:var(--ink)}.product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px 18px}.product-card{min-width:0;position:relative}.product-photo{position:relative;overflow:hidden;background:var(--paper);aspect-ratio:4/4.7;border-radius:4px}.product-photo img{width:100%;height:100%;object-fit:cover;transition:transform .45s}.product-card:hover .product-photo img{transform:scale(1.045)}.product-tag{position:absolute;top:12px;left:12px;background:#fffaf0ed;padding:6px 9px;font-size:9px;color:#86695b;letter-spacing:.06em}.add-button{position:absolute;bottom:10px;right:10px;border:0;border-radius:50%;width:38px;height:38px;background:#fffaf0;color:var(--ink);font-size:22px;cursor:pointer;box-shadow:0 4px 12px #3b25121c;transition:.2s}.add-button:hover{background:var(--pink);color:white}.product-info{padding:13px 2px}.product-category{font-size:9px;color:var(--green);letter-spacing:.1em}.product-info h3{font-size:13px;font-weight:600;margin:7px 0 5px}.product-desc{font-size:10px;color:var(--muted);margin:0 0 11px;line-height:1.7}.product-price{font-size:13px;font-weight:700}.empty-state{text-align:center;color:var(--muted);padding:40px}.hidden{display:none!important}.coupon-section{background:#f6eee8;padding:58px 9%;display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:center}.coupon-intro h2{font-size:27px}.coupon-intro p{font-size:11px;line-height:1.9;color:var(--muted);max-width:300px}.coupon-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}.coupon-card{display:flex;gap:13px;align-items:flex-start;background:#fffaf6;border:1px dashed #d9a6a9;padding:20px 15px;min-width:0}.coupon-card.blush{background:#f0dfe0}.coupon-icon{font-size:25px;color:var(--pink-dark)}.coupon-label{font-size:8px;letter-spacing:.18em;color:var(--pink-dark)}.coupon-card h3{font-size:15px;margin:7px 0}.coupon-card p{font-size:9px;color:var(--muted);margin:0 0 12px}.copy-coupon{border:0;border-bottom:1px solid #d8a5ad;background:transparent;padding:0 0 5px;font-size:9px;color:#7b5c5d;cursor:pointer;text-align:left}.copy-coupon strong{letter-spacing:.08em;margin-left:4px}.story-section{background:#f2e8e1;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:8%;padding:70px 12%}.story-image img{width:100%;height:310px;object-fit:cover;border-radius:3px}.story-copy h2{font-size:31px;margin:15px 0}.story-copy p{font-size:12px;line-height:2.2;color:#776d64;max-width:400px}.text-link{display:inline-block;margin-top:15px;padding-bottom:7px;border-bottom:1px solid var(--pink);font-size:11px}.newsletter-section{padding:60px 9%;display:flex;justify-content:space-between;align-items:center;gap:35px}.newsletter-section h2{font-size:23px}.newsletter-section p{color:var(--muted);font-size:11px}.newsletter-section form{display:flex;border-bottom:1px solid #cfc2b7;min-width:300px}.newsletter-section input{border:0;outline:0;background:transparent;padding:13px 4px;flex:1;min-width:0;font-size:11px}.newsletter-section button{border:0;background:transparent;color:var(--pink-dark);font-weight:700;cursor:pointer}.site-footer{padding:35px 7%;text-align:center;background:#37332f;color:#eee5da}.footer-brand{font:italic 31px Georgia}.footer-brand span{color:#e9a9b6;font-size:20px}.site-footer p{font-size:11px;color:#c5b8ad}.site-footer small{font-size:9px;color:#9e9186}
+.overlay{position:fixed;inset:0;background:#231c1880;z-index:19}.cart-drawer{position:fixed;right:0;top:0;bottom:0;width:min(440px,100%);background:var(--cream);z-index:20;padding:28px;display:flex;flex-direction:column;transform:translateX(105%);transition:transform .28s ease;box-shadow:-10px 0 40px #24190f15}.cart-drawer.open{transform:translateX(0)}.drawer-header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px}.drawer-header h2{font-size:21px;margin:8px 0 0}.drawer-header h2 span{font-size:12px;color:var(--muted);font-weight:400}.icon-button,.dialog-close{border:0;background:transparent;cursor:pointer;font-size:18px}.cart-items{overflow:auto;flex:1}.cart-row{display:grid;grid-template-columns:66px 1fr auto;gap:12px;padding:15px 0;border-bottom:1px solid var(--line);align-items:center}.cart-row img{width:66px;height:74px;object-fit:cover}.cart-row h3{font-size:12px;margin:0 0 7px}.cart-row p{font-size:11px;color:var(--muted);margin:0}.quantity-control{display:flex;align-items:center;gap:12px;margin-top:9px}.quantity-control button{width:23px;height:23px;border:1px solid var(--line);background:transparent;cursor:pointer}.remove-item{border:0;background:transparent;color:#a89b90;cursor:pointer;font-size:10px}.cart-empty{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.cart-empty>span{font-size:44px;color:var(--pink)}.cart-empty strong{margin-top:12px}.cart-empty p{color:var(--muted);font-size:11px}.cart-summary{border-top:1px solid var(--line);padding-top:14px}.coupon-input-label{display:flex;justify-content:space-between;align-items:center;font-size:10px;margin-bottom:7px}.coupon-input-label span{color:var(--muted);font-size:9px}.coupon-entry{display:flex;gap:7px}.coupon-entry input{flex:1;min-width:0;border:1px solid var(--line);padding:9px;background:#fffdf9;font-size:11px;outline-color:var(--pink)}.coupon-entry button{border:0;background:#efdadd;color:#754d52;padding:0 13px;cursor:pointer;font-size:10px}.coupon-message{font-size:10px;min-height:14px;margin:5px 0;color:var(--green)}.summary-line{display:flex;justify-content:space-between;align-items:center;margin:8px 0;font-size:11px}.summary-line strong{font-size:12px}.discount-line strong{color:var(--pink-dark)}.total-line{border-top:1px solid var(--line);padding-top:12px;margin-top:12px;font-size:12px}.total-line strong{font-size:17px}.cart-summary>small{display:block;color:var(--muted);font-size:9px;margin:10px 0 13px}.checkout-button{width:100%;padding:14px;background:var(--ink);color:white;border:0;cursor:pointer;transition:.2s;font-size:12px}.site-dialog{border:0;border-radius:5px;padding:0;width:min(460px,calc(100% - 28px));max-height:90vh;overflow:auto;box-shadow:var(--shadow);background:var(--cream);color:var(--ink)}.site-dialog::backdrop{background:#231c1880;backdrop-filter:blur(3px)}.dialog-form{padding:34px;position:relative}.dialog-form h2{font-size:24px;margin:10px 0}.dialog-description{font-size:11px;color:var(--muted);line-height:1.8}.dialog-close{position:absolute;right:19px;top:19px}.dialog-form label{display:block;font-size:11px;margin-top:14px}.dialog-form input,.dialog-form textarea,.dialog-form select{display:block;width:100%;border:1px solid var(--line);background:#fffdf9;padding:11px;margin-top:7px;outline-color:var(--pink);resize:vertical;color:var(--ink)}.demo-note{background:#f3e8dc;color:#7e6d5d;padding:10px;font-size:10px;line-height:1.7;margin:14px 0}.logout-button{width:100%;margin-top:10px;border:1px solid var(--line);background:transparent;padding:11px;cursor:pointer;font-size:11px}.orders-dialog{width:min(620px,calc(100% - 28px))}.orders-list{margin-top:18px}.order-card{border:1px solid var(--line);background:#fffdf9;padding:15px;margin:12px 0}.order-card-head{display:flex;justify-content:space-between;gap:10px;font-size:11px}.order-status{color:var(--green);background:#edf1e8;padding:4px 7px;font-size:9px;white-space:nowrap}.order-card p{font-size:11px;color:var(--muted);line-height:1.8}.order-card strong{font-size:12px}.order-items{border-top:1px solid var(--line);padding-top:8px;margin-top:8px}.no-orders{text-align:center;color:var(--muted);font-size:12px;padding:28px 0}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,20px);background:var(--ink);color:white;padding:12px 20px;border-radius:3px;font-size:11px;z-index:40;opacity:0;pointer-events:none;transition:.25s;max-width:90vw;text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:1000px){.site-header{padding:12px 4%;gap:12px}.main-nav{gap:13px}.header-actions{gap:9px}.brand strong{font-size:12px}.brand small{font-size:7px}.coupon-section{padding-left:7%;padding-right:7%;gap:25px}.coupon-card{padding:15px 11px}}
+@media(max-width:760px){.main-nav{display:none}.site-header{min-height:70px}.hero{padding-left:7%;padding-right:7%;gap:4%}.hero-art>img{height:300px}.category-section,.products-section{padding-left:7%;padding-right:7%}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 14px}.story-section{padding:55px 7%;gap:5%}.story-image img{height:270px}.coupon-section{grid-template-columns:1fr;padding:48px 7%;gap:15px}.coupon-intro p{max-width:100%}.newsletter-section{padding:50px 7%}}
+@media(max-width:600px){.announcement{font-size:9px}.site-header{padding:10px 4%;gap:8px}.brand{gap:7px}.brand strong{font-size:11px}.brand small{font-size:6px;letter-spacing:.1em}.brand-mark{width:31px;height:31px;font-size:22px}.header-actions{gap:8px}.text-action{font-size:10px}.member-button{display:none}.cart-button{font-size:10px;padding:6px 8px}.hero{grid-template-columns:1fr;padding:42px 7% 58px;gap:25px}.hero h1{font-size:36px}.hero-copy>p{font-size:12px}.hero-art{justify-self:center;max-width:390px;padding-right:0}.hero-art>img{height:290px}.floating-card{left:-4px;bottom:30px;padding:12px 14px;min-width:155px}.hero-sticker{right:0;width:64px;height:64px;font-size:11px}.hero-bottom{left:7%;right:7%;font-size:6px}.benefit-strip{gap:14px;justify-content:space-around;padding:18px 4%}.benefit-strip>div{grid-template-columns:19px auto;gap:5px}.benefit-strip>div>span{font-size:16px}.benefit-strip strong{font-size:9px}.benefit-strip small{font-size:7px}.section-heading{align-items:flex-start;flex-direction:column}.section-heading h2{font-size:24px}.section-heading>p{margin-top:0}.category-section{padding-top:48px}.category-list{gap:7px}.category-chip{padding:8px 11px;font-size:9px}.products-section{padding-top:30px;padding-bottom:55px}.products-heading{gap:14px}.search-box{width:100%;min-width:0}.product-grid{gap:20px 10px}.product-info h3{font-size:12px}.product-desc{min-height:34px}.product-tag{top:7px;left:7px;font-size:8px}.add-button{width:33px;height:33px}.coupon-cards{grid-template-columns:1fr}.coupon-card{padding:18px}.story-section{grid-template-columns:1fr;padding:45px 7%;gap:22px}.story-image img{height:230px}.story-copy h2{font-size:28px}.newsletter-section{padding:45px 7%;flex-direction:column;align-items:flex-start;gap:12px}.newsletter-section h2{font-size:21px}.newsletter-section form{width:100%;min-width:0}.cart-drawer{padding:20px}.dialog-form{padding:28px 22px}.orders-dialog .dialog-form{padding:28px 20px}}
+@media(max-width:370px){.text-action{font-size:9px}.brand strong{font-size:10px}.cart-button{font-size:9px}.header-actions{gap:6px}}
+
+</style>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+:root{--ink:#39332f;--muted:#887d75;--pink:#d98294;--pink-dark:#b85f76;--cream:#fffaf6;--paper:#f7f0e9;--line:#e9dfd7;--green:#77866d;--shadow:0 18px 55px rgba(67,49,37,.09)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--cream);color:var(--ink);font-family:'Noto Sans TC',sans-serif;font-size:14px}button,input,textarea,select{font:inherit}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}.announcement{text-align:center;padding:9px 12px;background:#efc9cf;color:#68474c;font-size:10px;letter-spacing:.08em}.site-header{min-height:80px;padding:12px 6%;display:flex;align-items:center;justify-content:space-between;gap:18px;background:rgba(255,250,246,.95);position:sticky;top:0;z-index:10;border-bottom:1px solid rgba(233,223,215,.7);backdrop-filter:blur(14px)}.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}.brand-mark{width:38px;height:38px;border-radius:50%;background:var(--pink);color:white;display:grid;place-items:center;font:italic 27px Georgia}.brand strong{display:block;font-size:14px;letter-spacing:.06em}.brand small{display:block;font-size:8px;color:var(--muted);letter-spacing:.16em;margin-top:4px}.main-nav,.header-actions{display:flex;align-items:center;gap:22px}.main-nav{color:#6e655e;font-size:11px}.main-nav a:hover,.text-link:hover{color:var(--pink-dark)}.header-actions{gap:12px}.text-action{border:0;background:transparent;cursor:pointer;color:#6f655e;font-size:11px;padding:8px 0;white-space:nowrap}.text-action:hover{color:var(--pink-dark)}.cart-button{background:transparent;border:1px solid var(--line);border-radius:30px;padding:8px 13px;cursor:pointer;font-size:11px;white-space:nowrap}.cart-button span{display:inline-grid;place-items:center;background:var(--pink);color:white;border-radius:50%;width:21px;height:21px;margin-left:5px}.hero{min-height:540px;padding:58px 9% 50px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:5%;position:relative;overflow:hidden;background:radial-gradient(ellipse at 80% 25%,#f4e4dc 0,transparent 42%),var(--cream)}.hero-copy{padding-bottom:25px;z-index:1}.eyebrow{font-size:9px;letter-spacing:.22em;color:var(--pink-dark);font-weight:700}.hero h1{font-size:clamp(34px,4.3vw,55px);line-height:1.45;letter-spacing:.035em;margin:20px 0}.hero h1 em{font-family:'DM Serif Display',serif;color:var(--pink-dark);font-weight:400}.hero-copy>p{line-height:2;color:var(--muted);max-width:400px;font-size:12px}.primary-button{display:inline-flex;align-items:center;gap:26px;background:var(--ink);color:white;border:0;border-radius:3px;padding:14px 21px;margin-top:18px;font-size:11px;cursor:pointer;transition:.2s}.primary-button:hover,.checkout-button:hover{background:var(--pink-dark);transform:translateY(-1px)}.hero-note{font-size:10px;color:var(--muted);margin-top:28px;letter-spacing:.05em}.note-dot{display:inline-block;width:7px;height:7px;background:var(--green);border-radius:50%;margin-right:8px}.hero-art{position:relative;max-width:490px;justify-self:end;width:100%;padding:0 10px 18px 0}.hero-art>img{width:100%;height:360px;object-fit:cover;border-radius:48% 48% 5px 5px;box-shadow:var(--shadow)}.floating-card{position:absolute;bottom:45px;left:-35px;background:#fffdf9;padding:16px 20px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:5px;min-width:180px}.floating-card span,.floating-card small{font-size:10px;color:var(--muted)}.floating-card strong{font-size:13px}.hero-sticker{position:absolute;right:-5px;top:15px;background:#e8c8b6;color:#6b4a3d;border-radius:50%;width:76px;height:76px;display:grid;place-content:center;text-align:center;font:italic 13px Georgia;transform:rotate(10deg)}.hero-bottom{position:absolute;bottom:14px;left:9%;right:9%;display:flex;justify-content:space-between;color:#a49a8f;font-size:8px;letter-spacing:.2em}.hero-bottom span{color:var(--pink);font-size:17px}.benefit-strip{display:flex;justify-content:center;gap:clamp(30px,8vw,110px);padding:23px 6%;border-bottom:1px solid var(--line);border-top:1px solid var(--line);background:#fffdf9}.benefit-strip>div{display:grid;grid-template-columns:26px auto;align-items:center;column-gap:9px}.benefit-strip>div>span{grid-row:span 2;color:var(--pink-dark);font-size:20px}.benefit-strip strong{font-size:11px}.benefit-strip small{font-size:9px;color:var(--muted);margin-top:3px}.category-section,.products-section{padding:70px 9% 15px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:20px}.section-heading h2,.story-copy h2,.newsletter-section h2,.coupon-intro h2{font-size:clamp(23px,3vw,31px);letter-spacing:.04em;margin:10px 0 0;line-height:1.5}.section-heading>p{font-size:11px;color:var(--muted);margin-bottom:4px}.category-list{display:flex;flex-wrap:wrap;gap:10px;margin:25px 0 32px}.category-chip{border:1px solid var(--line);background:transparent;border-radius:30px;padding:10px 17px;color:#6f665e;cursor:pointer;font-size:10px;transition:.2s}.category-chip:hover,.category-chip.active{background:#f1dfe1;border-color:#f1dfe1;color:#754d52}.products-section{padding-top:35px;padding-bottom:75px}.products-heading{margin-bottom:28px}.tiny-flower{color:var(--pink);font-size:16px}.search-box{display:flex;align-items:center;gap:8px;border-bottom:1px solid #d8ccc3;padding:8px 0;min-width:210px;color:var(--pink-dark)}.search-box span{font-size:24px}.search-box input{border:0;outline:0;background:transparent;width:100%;font-size:11px;color:var(--ink)}.product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px 18px}.product-card{min-width:0;position:relative}.product-photo{position:relative;overflow:hidden;background:var(--paper);aspect-ratio:4/4.7;border-radius:4px}.product-photo img{width:100%;height:100%;object-fit:cover;transition:transform .45s}.product-card:hover .product-photo img{transform:scale(1.045)}.product-tag{position:absolute;top:12px;left:12px;background:#fffaf0ed;padding:6px 9px;font-size:9px;color:#86695b;letter-spacing:.06em}.add-button{position:absolute;bottom:10px;right:10px;border:0;border-radius:50%;width:38px;height:38px;background:#fffaf0;color:var(--ink);font-size:22px;cursor:pointer;box-shadow:0 4px 12px #3b25121c;transition:.2s}.add-button:hover{background:var(--pink);color:white}.product-info{padding:13px 2px}.product-category{font-size:9px;color:var(--green);letter-spacing:.1em}.product-info h3{font-size:13px;font-weight:600;margin:7px 0 5px}.product-desc{font-size:10px;color:var(--muted);margin:0 0 11px;line-height:1.7}.product-price{font-size:13px;font-weight:700}.empty-state{text-align:center;color:var(--muted);padding:40px}.hidden{display:none!important}.coupon-section{background:#f6eee8;padding:58px 9%;display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:center}.coupon-intro h2{font-size:27px}.coupon-intro p{font-size:11px;line-height:1.9;color:var(--muted);max-width:300px}.coupon-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}.coupon-card{display:flex;gap:13px;align-items:flex-start;background:#fffaf6;border:1px dashed #d9a6a9;padding:20px 15px;min-width:0}.coupon-card.blush{background:#f0dfe0}.coupon-icon{font-size:25px;color:var(--pink-dark)}.coupon-label{font-size:8px;letter-spacing:.18em;color:var(--pink-dark)}.coupon-card h3{font-size:15px;margin:7px 0}.coupon-card p{font-size:9px;color:var(--muted);margin:0 0 12px}.copy-coupon{border:0;border-bottom:1px solid #d8a5ad;background:transparent;padding:0 0 5px;font-size:9px;color:#7b5c5d;cursor:pointer;text-align:left}.copy-coupon strong{letter-spacing:.08em;margin-left:4px}.story-section{background:#f2e8e1;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:8%;padding:70px 12%}.story-image img{width:100%;height:310px;object-fit:cover;border-radius:3px}.story-copy h2{font-size:31px;margin:15px 0}.story-copy p{font-size:12px;line-height:2.2;color:#776d64;max-width:400px}.text-link{display:inline-block;margin-top:15px;padding-bottom:7px;border-bottom:1px solid var(--pink);font-size:11px}.newsletter-section{padding:60px 9%;display:flex;justify-content:space-between;align-items:center;gap:35px}.newsletter-section h2{font-size:23px}.newsletter-section p{color:var(--muted);font-size:11px}.newsletter-section form{display:flex;border-bottom:1px solid #cfc2b7;min-width:300px}.newsletter-section input{border:0;outline:0;background:transparent;padding:13px 4px;flex:1;min-width:0;font-size:11px}.newsletter-section button{border:0;background:transparent;color:var(--pink-dark);font-weight:700;cursor:pointer}.site-footer{padding:35px 7%;text-align:center;background:#37332f;color:#eee5da}.footer-brand{font:italic 31px Georgia}.footer-brand span{color:#e9a9b6;font-size:20px}.site-footer p{font-size:11px;color:#c5b8ad}.site-footer small{font-size:9px;color:#9e9186}
+.overlay{position:fixed;inset:0;background:#231c1880;z-index:19}.cart-drawer{position:fixed;right:0;top:0;bottom:0;width:min(440px,100%);background:var(--cream);z-index:20;padding:28px;display:flex;flex-direction:column;transform:translateX(105%);transition:transform .28s ease;box-shadow:-10px 0 40px #24190f15}.cart-drawer.open{transform:translateX(0)}.drawer-header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px}.drawer-header h2{font-size:21px;margin:8px 0 0}.drawer-header h2 span{font-size:12px;color:var(--muted);font-weight:400}.icon-button,.dialog-close{border:0;background:transparent;cursor:pointer;font-size:18px}.cart-items{overflow:auto;flex:1}.cart-row{display:grid;grid-template-columns:66px 1fr auto;gap:12px;padding:15px 0;border-bottom:1px solid var(--line);align-items:center}.cart-row img{width:66px;height:74px;object-fit:cover}.cart-row h3{font-size:12px;margin:0 0 7px}.cart-row p{font-size:11px;color:var(--muted);margin:0}.quantity-control{display:flex;align-items:center;gap:12px;margin-top:9px}.quantity-control button{width:23px;height:23px;border:1px solid var(--line);background:transparent;cursor:pointer}.remove-item{border:0;background:transparent;color:#a89b90;cursor:pointer;font-size:10px}.cart-empty{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.cart-empty>span{font-size:44px;color:var(--pink)}.cart-empty strong{margin-top:12px}.cart-empty p{color:var(--muted);font-size:11px}.cart-summary{border-top:1px solid var(--line);padding-top:14px}.coupon-input-label{display:flex;justify-content:space-between;align-items:center;font-size:10px;margin-bottom:7px}.coupon-input-label span{color:var(--muted);font-size:9px}.coupon-entry{display:flex;gap:7px}.coupon-entry input{flex:1;min-width:0;border:1px solid var(--line);padding:9px;background:#fffdf9;font-size:11px;outline-color:var(--pink)}.coupon-entry button{border:0;background:#efdadd;color:#754d52;padding:0 13px;cursor:pointer;font-size:10px}.coupon-message{font-size:10px;min-height:14px;margin:5px 0;color:var(--green)}.summary-line{display:flex;justify-content:space-between;align-items:center;margin:8px 0;font-size:11px}.summary-line strong{font-size:12px}.discount-line strong{color:var(--pink-dark)}.total-line{border-top:1px solid var(--line);padding-top:12px;margin-top:12px;font-size:12px}.total-line strong{font-size:17px}.cart-summary>small{display:block;color:var(--muted);font-size:9px;margin:10px 0 13px}.checkout-button{width:100%;padding:14px;background:var(--ink);color:white;border:0;cursor:pointer;transition:.2s;font-size:12px}.site-dialog{border:0;border-radius:5px;padding:0;width:min(460px,calc(100% - 28px));max-height:90vh;overflow:auto;box-shadow:var(--shadow);background:var(--cream);color:var(--ink)}.site-dialog::backdrop{background:#231c1880;backdrop-filter:blur(3px)}.dialog-form{padding:34px;position:relative}.dialog-form h2{font-size:24px;margin:10px 0}.dialog-description{font-size:11px;color:var(--muted);line-height:1.8}.dialog-close{position:absolute;right:19px;top:19px}.dialog-form label{display:block;font-size:11px;margin-top:14px}.dialog-form input,.dialog-form textarea,.dialog-form select{display:block;width:100%;border:1px solid var(--line);background:#fffdf9;padding:11px;margin-top:7px;outline-color:var(--pink);resize:vertical;color:var(--ink)}.demo-note{background:#f3e8dc;color:#7e6d5d;padding:10px;font-size:10px;line-height:1.7;margin:14px 0}.logout-button{width:100%;margin-top:10px;border:1px solid var(--line);background:transparent;padding:11px;cursor:pointer;font-size:11px}.orders-dialog{width:min(620px,calc(100% - 28px))}.orders-list{margin-top:18px}.order-card{border:1px solid var(--line);background:#fffdf9;padding:15px;margin:12px 0}.order-card-head{display:flex;justify-content:space-between;gap:10px;font-size:11px}.order-status{color:var(--green);background:#edf1e8;padding:4px 7px;font-size:9px;white-space:nowrap}.order-card p{font-size:11px;color:var(--muted);line-height:1.8}.order-card strong{font-size:12px}.order-items{border-top:1px solid var(--line);padding-top:8px;margin-top:8px}.no-orders{text-align:center;color:var(--muted);font-size:12px;padding:28px 0}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,20px);background:var(--ink);color:white;padding:12px 20px;border-radius:3px;font-size:11px;z-index:40;opacity:0;pointer-events:none;transition:.25s;max-width:90vw;text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:1000px){.site-header{padding:12px 4%;gap:12px}.main-nav{gap:13px}.header-actions{gap:9px}.brand strong{font-size:12px}.brand small{font-size:7px}.coupon-section{padding-left:7%;padding-right:7%;gap:25px}.coupon-card{padding:15px 11px}}
+@media(max-width:760px){.main-nav{display:none}.site-header{min-height:70px}.hero{padding-left:7%;padding-right:7%;gap:4%}.hero-art>img{height:300px}.category-section,.products-section{padding-left:7%;padding-right:7%}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 14px}.story-section{padding:55px 7%;gap:5%}.story-image img{height:270px}.coupon-section{grid-template-columns:1fr;padding:48px 7%;gap:15px}.coupon-intro p{max-width:100%}.newsletter-section{padding:50px 7%}}
+@media(max-width:600px){.announcement{font-size:9px}.site-header{padding:10px 4%;gap:8px}.brand{gap:7px}.brand strong{font-size:11px}.brand small{font-size:6px;letter-spacing:.1em}.brand-mark{width:31px;height:31px;font-size:22px}.header-actions{gap:8px}.text-action{font-size:10px}.member-button{display:none}.cart-button{font-size:10px;padding:6px 8px}.hero{grid-template-columns:1fr;padding:42px 7% 58px;gap:25px}.hero h1{font-size:36px}.hero-copy>p{font-size:12px}.hero-art{justify-self:center;max-width:390px;padding-right:0}.hero-art>img{height:290px}.floating-card{left:-4px;bottom:30px;padding:12px 14px;min-width:155px}.hero-sticker{right:0;width:64px;height:64px;font-size:11px}.hero-bottom{left:7%;right:7%;font-size:6px}.benefit-strip{gap:14px;justify-content:space-around;padding:18px 4%}.benefit-strip>div{grid-template-columns:19px auto;gap:5px}.benefit-strip>div>span{font-size:16px}.benefit-strip strong{font-size:9px}.benefit-strip small{font-size:7px}.section-heading{align-items:flex-start;flex-direction:column}.section-heading h2{font-size:24px}.section-heading>p{margin-top:0}.category-section{padding-top:48px}.category-list{gap:7px}.category-chip{padding:8px 11px;font-size:9px}.products-section{padding-top:30px;padding-bottom:55px}.products-heading{gap:14px}.search-box{width:100%;min-width:0}.product-grid{gap:20px 10px}.product-info h3{font-size:12px}.product-desc{min-height:34px}.product-tag{top:7px;left:7px;font-size:8px}.add-button{width:33px;height:33px}.coupon-cards{grid-template-columns:1fr}.coupon-card{padding:18px}.story-section{grid-template-columns:1fr;padding:45px 7%;gap:22px}.story-image img{height:230px}.story-copy h2{font-size:28px}.newsletter-section{padding:45px 7%;flex-direction:column;align-items:flex-start;gap:12px}.newsletter-section h2{font-size:21px}.newsletter-section form{width:100%;min-width:0}.cart-drawer{padding:20px}.dialog-form{padding:28px 22px}.orders-dialog .dialog-form{padding:28px 20px}}
+@media(max-width:370px){.text-action{font-size:9px}.brand strong{font-size:10px}.cart-button{font-size:9px}.header-actions{gap:6px}}
+
+</style>
+</head>
+<body>
+  <div class="announcement">✿ Mori 甜點日記｜滿 NT$699 享免運（展示活動） ✿</div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Mori 首頁"><span class="brand-mark">m.</span><span><strong>Mori 食光研究所</strong><small>DESSERTS · LITTLE JOYS</small></span></a>
+    <nav class="main-nav" aria-label="主要導覽"><a href="#products">甜點選物</a><a href="#coupons">本月優惠</a><a href="#story">品牌故事</a></nav>
+    <div class="header-actions">
+      <button class="text-action" id="orders-open">我的訂單</button>
+      <button class="text-action member-button" id="member-open"><span id="member-label">會員登入</span></button>
+      <button class="cart-button" id="open-cart" aria-label="打開購物車">購物袋 <span id="cart-count">0</span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">A LITTLE TASTE OF HAPPINESS</span>
+        <h1>日子有點甜，<br><em>剛好是你喜歡的樣子。</em></h1>
+        <p>把柔軟的蛋糕、酥香的餅乾，和每一個值得被記住的小日常，通通收藏起來。</p>
+        <a class="primary-button" href="#products">探索今日甜點 <span>↗</span></a>
+        <div class="hero-note"><span class="note-dot"></span> 精選甜點・送禮提案・日常療癒</div>
+      </div>
+      <div class="hero-art">
+        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1200&q=85" alt="手作甜點">
+        <div class="floating-card"><span>本週人氣甜點</span><strong>手作甜點時光</strong><small>今天也要好好吃甜點 ♡</small></div>
+        <span class="hero-sticker">baked with<br>love ✿</span>
+      </div>
+      <div class="hero-bottom">SWEET MOMENTS, EVERY DAY <span>✳</span> YOUR LITTLE DESSERT SHOP</div>
+    </section>
+
+    <section class="benefit-strip">
+      <div><span>♡</span><strong>精選甜點</strong><small>替日常留一點甜</small></div>
+      <div><span>✿</span><strong>送禮靈感</strong><small>把心意好好包裝</small></div>
+      <div><span>☁</span><strong>簡單選購</strong><small>收藏喜歡的風味</small></div>
+    </section>
+
+    <section class="category-section">
+      <div class="section-heading"><div><span class="eyebrow">FIND YOUR SWEET</span><h2>今天想來點什麼？</h2></div><p>選一種心情，找到你的命定甜點。</p></div>
+      <div class="category-list">
+        <button type="button" class="category-chip active" data-category="全部">✿ 全部甜點</button>
+        <button type="button" class="category-chip" data-category="蛋糕">🍰 蛋糕與塔</button>
+        <button type="button" class="category-chip" data-category="餅乾">🍪 餅乾小點</button>
+        <button type="button" class="category-chip" data-category="飲品">☕ 咖啡飲品</button>
+        <button type="button" class="category-chip" data-category="禮盒">🎁 甜點禮盒</button>
+      </div>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="section-heading products-heading"><div><span class="eyebrow">THE MORI SELECTION</span><h2>本週甜點選物 <span class="tiny-flower">✳</span></h2></div><label class="search-box"><span>⌕</span><input id="search-input" type="search" placeholder="搜尋喜歡的甜點…" aria-label="搜尋商品"></label></div>
+      <div class="product-grid" id="product-grid"></div>
+      <p class="empty-state hidden" id="empty-state">找不到符合的甜點，換個關鍵字試試吧 ♡</p>
+    </section>
+
+    <section class="coupon-section" id="coupons">
+      <div class="coupon-intro"><span class="eyebrow">A LITTLE GIFT FOR YOU</span><h2>甜一點的小優惠</h2><p>登入後可在結帳時輸入優惠碼。這些優惠皆為網站展示用。</p></div>
+      <div class="coupon-cards">
+        <article class="coupon-card"><div class="coupon-icon">♡</div><div><span class="coupon-label">FIRST TASTE</span><h3>新朋友折 NT$50</h3><p>單筆滿 NT$399 可使用</p><button class="copy-coupon" data-code="MORI50">複製優惠碼 <strong>MORI50</strong></button></div></article>
+        <article class="coupon-card blush"><div class="coupon-icon">✿</div><div><span class="coupon-label">SWEET DAY</span><h3>滿額 9 折</h3><p>單筆滿 NT$699 可使用</p><button class="copy-coupon" data-code="SWEET10">複製優惠碼 <strong>SWEET10</strong></button></div></article>
+      </div>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-image"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=85" alt="新鮮出爐的麵包" loading="lazy"></div>
+      <div class="story-copy"><span class="eyebrow">A SLOWER KIND OF HAPPINESS</span><h2>美味不必很遠，<br>幸福就在日常。</h2><p>Mori 相信，一份喜歡的甜點，就能替平凡的一天加上一點光。我們為生活挑選甜點，也替每一份心意找到剛剛好的模樣。</p><a href="#products" class="text-link">逛逛所有甜點　↗</a></div>
+    </section>
+    <section class="newsletter-section" id="newsletter"><div><span class="eyebrow">A LETTER FROM MORI</span><h2>把一點甜，寄進你的日常。</h2><p>訂閱食光信箱，接收新品與甜點靈感。（展示功能）</p></div><form id="newsletter-form"><input type="email" placeholder="輸入你的 Email" aria-label="Email" required><button type="submit">訂閱 ✿</button></form></section>
+  </main>
+  <footer class="site-footer"><a class="footer-brand" href="#top">mori<span>✿</span></a><p>吃一口，收藏生活的美好。</p><small>© 2026 Mori Food Market. 課程專題展示網站。</small></footer>
+
+  <div class="overlay hidden" id="overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="購物車" aria-hidden="true">
+    <div class="drawer-header"><div><span class="eyebrow">YOUR LITTLE TREATS</span><h2>我的購物袋 <span id="drawer-count">(0)</span></h2></div><button id="close-cart" class="icon-button" aria-label="關閉購物車">✕</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-empty" id="cart-empty"><span>♡</span><strong>購物袋還是空的</strong><p>去挑幾份喜歡的甜點吧！</p><button class="primary-button" id="browse-products">去逛逛 ↗</button></div>
+    <div class="cart-summary" id="cart-summary">
+      <label class="coupon-input-label">優惠碼 <span>輸入 MORI50 或 SWEET10</span></label>
+      <div class="coupon-entry"><input id="coupon-input" placeholder="輸入優惠碼" aria-label="優惠碼"><button id="apply-coupon">套用</button></div>
+      <p id="coupon-message" class="coupon-message"></p>
+      <div class="summary-line"><span>商品小計</span><strong id="cart-subtotal">NT$ 0</strong></div>
+      <div class="summary-line discount-line hidden" id="discount-line"><span>優惠折抵</span><strong id="cart-discount">- NT$ 0</strong></div>
+      <div class="summary-line total-line"><span>預估總額</span><strong id="cart-total">NT$ 0</strong></div>
+      <small>展示版不會真的收款或寄送商品。</small><button class="checkout-button" id="checkout-button">前往結帳　↗</button>
+    </div>
+  </aside>
+
+  <dialog id="member-dialog" class="site-dialog">
+    <form id="member-form" class="dialog-form">
+      <button type="button" class="dialog-close" data-close-dialog="member-dialog" aria-label="關閉">✕</button><span class="eyebrow">WELCOME TO MORI</span><h2 id="member-title">登入 Mori 會員</h2><p class="dialog-description">使用暱稱與 Email 建立本機展示會員，方便體驗訂單功能。</p>
+      <label>你的暱稱<input name="name" required maxlength="30" placeholder="例如：小莓"></label>
+      <label>Email<input name="email" type="email" required placeholder="you@example.com"></label>
+      <p class="demo-note">課程展示模式：資料只儲存在目前瀏覽器，不是真正的帳號驗證，也請勿輸入密碼或敏感資料。</p>
+      <button class="checkout-button" type="submit">進入 Mori ♡</button>
+      <button type="button" class="logout-button hidden" id="logout-button">登出此展示會員</button>
+    </form>
+  </dialog>
+
+  <dialog id="orders-dialog" class="site-dialog orders-dialog">
+    <div class="dialog-form"><button type="button" class="dialog-close" data-close-dialog="orders-dialog" aria-label="關閉">✕</button><span class="eyebrow">YOUR MORI JOURNAL</span><h2>我的訂單</h2><p class="dialog-description" id="orders-intro">登入後可查看此瀏覽器儲存的展示訂單。</p><div id="orders-list" class="orders-list"></div></div>
+  </dialog>
+
+  <dialog id="checkout-dialog" class="site-dialog">
+    <form id="checkout-form" class="dialog-form"><button type="button" class="dialog-close" data-close-dialog="checkout-dialog" aria-label="關閉">✕</button><span class="eyebrow">ONE MORE SWEET STEP</span><h2>確認你的甜點訂單</h2><p class="demo-note">這是前端展示版，不會真的收款或建立物流訂單。</p>
+      <label>收件人<input name="customer" required placeholder="怎麼稱呼你？"></label><label>Email<input name="email" type="email" required placeholder="you@example.com"></label><label>配送地址<textarea name="address" required rows="2" placeholder="請輸入示範地址"></textarea></label>
+      <label>付款方式<select name="payment"><option>貨到付款（展示）</option><option>信用卡（模擬，不會扣款）</option><option>轉帳（展示）</option></select></label>
+      <div class="summary-line"><span>商品小計</span><strong id="checkout-subtotal">NT$ 0</strong></div><div class="summary-line discount-line"><span>優惠折抵</span><strong id="checkout-discount">- NT$ 0</strong></div><div class="summary-line total-line"><span>訂單金額</span><strong id="checkout-total">NT$ 0</strong></div>
+      <button class="checkout-button" type="submit">建立展示訂單</button>
+    </form>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script>
+const products = [
+  {id:3,name:"抹茶拿鐵",category:"飲品",price:130,tag:"人氣飲品",desc:"抹茶微苦與牛奶的溫柔平衡",image:"https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=700&q=85"},
+  {id:5,name:"手作餅乾禮盒",category:"禮盒",price:320,tag:"送禮首選",desc:"把剛剛好的甜，裝進小小禮盒",image:"https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=700&q=85"},
+  {id:6,name:"焦糖布丁",category:"蛋糕",price:95,tag:"療癒小點",desc:"蛋香濃郁，焦糖尾韻微苦",image:"https://images.unsplash.com/photo-1511911063855-2bf39afa5b2e?auto=format&fit=crop&w=700&q=85"},
+  {id:7,name:"冰釀拿鐵",category:"飲品",price:120,tag:"日常提神",desc:"咖啡香氣與清爽奶香交織",image:"https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=85"},
+  {id:9,name:"檸檬糖霜磅蛋糕",category:"蛋糕",price:145,tag:"清新酸甜",desc:"檸檬香氣搭配細緻糖霜，午後剛剛好",image:"https://images.unsplash.com/photo-1602351447937-745cb720612f?auto=format&fit=crop&w=700&q=85"},
+  {id:10,name:"濃情布朗尼",category:"蛋糕",price:110,tag:"巧克力控",desc:"濃郁可可與微脆外層的療癒組合",image:"https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=85"},
+  {id:12,name:"海鹽焦糖餅乾",category:"餅乾",price:90,tag:"鹹甜平衡",desc:"奶油香、焦糖甜與一點點海鹽",image:"https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=700&q=85"},
+];
+const STORAGE = {cart:"mori_cart_v2", member:"mori_member_v2", orders:"mori_orders_v2"};
+let selectedCategory = "全部";
+let cart = readStore(STORAGE.cart, []);
+let member = readStore(STORAGE.member, null);
+let orders = readStore(STORAGE.orders, []);
+let appliedCoupon = "";
+let toastTimer;
+const $ = (s) => document.querySelector(s);
+const grid = $("#product-grid");
+const toast = $("#toast");
+
+function readStore(key, fallback) {
+  try { const value = localStorage.getItem(key); return value ? JSON.parse(value) : fallback; }
+  catch { return fallback; }
+}
+function saveStore(key, value) {
+  try { localStorage.setItem(key, JSON.stringify(value)); }
+  catch { showToast("瀏覽器儲存空間無法使用，資料可能不會保留。"); }
+}
+function money(value) { return "NT$ " + Number(value).toLocaleString("zh-TW"); }
+function safeText(value) {
+  return String(value ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+}
+function showToast(message) {
+  toast.textContent = message; toast.classList.add("show");
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => toast.classList.remove("show"), 2300);
+}
+function couponDiscount(subtotal, code) {
+  if (code === "MORI50" && subtotal >= 399) return Math.min(50, subtotal);
+  if (code === "SWEET10" && subtotal >= 699) return Math.round(subtotal * 0.1);
+  return 0;
+}
+function subtotalValue() { return cart.reduce((sum, item) => sum + item.price * item.qty, 0); }
+function discountValue() { return couponDiscount(subtotalValue(), appliedCoupon); }
+function totalValue() { return Math.max(0, subtotalValue() - discountValue()); }
+
+function renderProducts() {
+  const searchInput = $("#search-input");
+  const query = String(searchInput?.value || "").trim().toLocaleLowerCase("zh-TW");
+  const filtered = products.filter(p => {
+    const categoryMatches = selectedCategory === "全部" || p.category === selectedCategory;
+    const searchMatches = !query || [p.name, p.desc, p.category]
+      .some(v => String(v ?? "").toLocaleLowerCase("zh-TW").includes(query));
+    return categoryMatches && searchMatches;
+  });
+  grid.innerHTML = filtered.map(p => `
+    <article class="product-card">
+      <div class="product-photo"><img src="${p.image}" alt="${safeText(p.name)}" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%23fff0e8%22/%3E%3Cellipse cx=%22200%22 cy=%22220%22 rx=%22120%22 ry=%2220%22 fill=%22%23efd2c0%22/%3E%3Crect x=%22105%22 y=%22105%22 width=%2290%22 height=%2280%22 rx=%2215%22 fill=%22%23efc878%22 stroke=%22%23c9954f%22 stroke-width=%226%22/%3E%3Crect x=%22205%22 y=%22105%22 width=%2290%22 height=%2280%22 rx=%2215%22 fill=%22%23f4d58e%22 stroke=%22%23c9954f%22 stroke-width=%226%22/%3E%3C/svg%3E'"><span class="product-tag">${safeText(p.tag)}</span><button type="button" class="add-button" data-add="${p.id}" aria-label="將${safeText(p.name)}加入購物車">+</button></div>
+      <div class="product-info"><span class="product-category">${safeText(p.category)} / MORI PICK</span><h3>${safeText(p.name)}</h3><p class="product-desc">${safeText(p.desc)}</p><span class="product-price">${money(p.price)}</span></div>
+    </article>`).join("");
+  const emptyState = $("#empty-state");
+  if (emptyState) {
+    emptyState.textContent = filtered.length ? "" : "找不到符合的甜點，請切換分類或清除搜尋關鍵字 ♡";
+    emptyState.classList.toggle("hidden", filtered.length > 0);
+  }
+}
+
+function addToCart(id) {
+  const item = cart.find(x => x.id === id);
+  if (item) item.qty++; else {
+    const product = products.find(p => p.id === id);
+    if (!product) return;
+    cart.push({...product, qty:1});
+  }
+  saveStore(STORAGE.cart, cart); renderCart(); showToast("已加入購物袋 ♡");
+}
+function changeQty(id, delta) {
+  const item = cart.find(x => x.id === id); if (!item) return;
+  item.qty += delta;
+  if (item.qty <= 0) cart = cart.filter(x => x.id !== id);
+  saveStore(STORAGE.cart, cart); renderCart();
+}
+function removeItem(id) {
+  cart = cart.filter(x => x.id !== id); saveStore(STORAGE.cart, cart); renderCart();
+}
+function renderCart() {
+  const count = cart.reduce((sum,p) => sum + p.qty, 0);
+  const subtotal = subtotalValue(), discount = discountValue(), total = totalValue();
+  $("#cart-count").textContent = count;
+  $("#drawer-count").textContent = `(${count})`;
+  $("#cart-subtotal").textContent = money(subtotal);
+  $("#cart-discount").textContent = "- " + money(discount);
+  $("#cart-total").textContent = money(total);
+  $("#discount-line").classList.toggle("hidden", discount <= 0);
+  $("#cart-items").innerHTML = cart.map(p => `
+    <div class="cart-row"><img src="${p.image}" alt="${safeText(p.name)}"><div><h3>${safeText(p.name)}</h3><p>${money(p.price)}</p><div class="quantity-control"><button data-qty="${p.id}" data-delta="-1" aria-label="減少數量">−</button><span>${p.qty}</span><button data-qty="${p.id}" data-delta="1" aria-label="增加數量">+</button></div></div><button class="remove-item" data-remove="${p.id}">移除</button></div>`).join("");
+  $("#cart-empty").classList.toggle("hidden", count > 0);
+  $("#cart-summary").classList.toggle("hidden", count === 0);
+  $("#coupon-input").value = appliedCoupon;
+  updateCheckoutTotals();
+}
+function updateCheckoutTotals() {
+  $("#checkout-subtotal").textContent = money(subtotalValue());
+  $("#checkout-discount").textContent = "- " + money(discountValue());
+  $("#checkout-total").textContent = money(totalValue());
+}
+function openCart() {
+  $("#cart-drawer").classList.add("open"); $("#cart-drawer").setAttribute("aria-hidden","false");
+  $("#overlay").classList.remove("hidden"); document.body.style.overflow = "hidden";
+}
+function closeCart() {
+  $("#cart-drawer").classList.remove("open"); $("#cart-drawer").setAttribute("aria-hidden","true");
+  $("#overlay").classList.add("hidden"); document.body.style.overflow = "";
+}
+function updateMemberUI() {
+  $("#member-label").textContent = member ? `嗨，${member.name}` : "會員登入";
+  $("#orders-intro").textContent = member ? `${member.name}，這裡是你在此瀏覽器建立的展示訂單。` : "請先登入展示會員，再查看此瀏覽器儲存的訂單。";
+  $("#member-title").textContent = member ? "會員資料" : "登入 Mori 會員";
+  $("#member-form").elements.name.value = member?.name || "";
+  $("#member-form").elements.email.value = member?.email || "";
+  $("#logout-button").classList.toggle("hidden", !member);
+  $("#member-form").querySelector('button[type="submit"]').textContent = member ? "更新會員資料" : "進入 Mori ♡";
+}
+function renderOrders() {
+  const list = member ? orders.filter(o => o.email.toLowerCase() === member.email.toLowerCase()) : [];
+  $("#orders-list").innerHTML = !member
+    ? '<div class="no-orders">請先登入會員，才能查看訂單。</div>'
+    : list.length === 0
+      ? '<div class="no-orders">目前還沒有訂單紀錄。<br>去挑一份喜歡的甜點吧 ♡</div>'
+      : [...list].reverse().map(o => `
+        <article class="order-card">
+          <div class="order-card-head"><strong>訂單編號 ${safeText(o.id)}</strong><span class="order-status">${safeText(o.status)}</span></div>
+          <p>建立時間：${safeText(o.createdAt)}<br>收件人：${safeText(o.customer)}<br>付款方式：${safeText(o.payment)}</p>
+          <div class="order-items">${o.items.map(i => `<p>${safeText(i.name)} × ${i.qty}　${money(i.price*i.qty)}</p>`).join("")}</div>
+          <div class="summary-line"><span>優惠折抵 ${o.coupon ? `(${safeText(o.coupon)})` : ""}</span><strong>- ${money(o.discount)}</strong></div>
+          <div class="summary-line total-line"><span>訂單金額</span><strong>${money(o.total)}</strong></div>
+        </article>`).join("");
+}
+function openDialog(id) { const d = document.getElementById(id); if (d && !d.open) d.showModal(); }
+function closeDialog(id) { const d = document.getElementById(id); if (d?.open) d.close(); }
+
+document.addEventListener("click", e => {
+  const add = e.target.closest("[data-add]"); if (add) addToCart(Number(add.dataset.add));
+  const qty = e.target.closest("[data-qty]"); if (qty) changeQty(Number(qty.dataset.qty), Number(qty.dataset.delta));
+  const remove = e.target.closest("[data-remove]"); if (remove) removeItem(Number(remove.dataset.remove));
+  const copy = e.target.closest("[data-code]");
+  if (copy) {
+    const code = copy.dataset.code; $("#coupon-input").value = code;
+    if (navigator.clipboard?.writeText) navigator.clipboard.writeText(code).then(()=>showToast(`已複製優惠碼 ${code} ♡`)).catch(()=>showToast(`優惠碼：${code}`));
+    else showToast(`優惠碼：${code}`);
+  }
+  const close = e.target.closest("[data-close-dialog]"); if (close) closeDialog(close.dataset.closeDialog);
+});
+document.querySelectorAll(".category-chip").forEach(button => button.addEventListener("click", () => {
+  selectedCategory = button.dataset.category || "全部";
+  // 切換分類時清除舊搜尋字，避免分類與搜尋條件疊加後誤顯示空清單。
+  const searchInput = $("#search-input");
+  if (searchInput) searchInput.value = "";
+  document.querySelectorAll(".category-chip").forEach(b => b.classList.toggle("active", b === button));
+  renderProducts();
+}));
+$("#search-input").addEventListener("input", renderProducts);
+$("#open-cart").addEventListener("click", openCart);
+$("#close-cart").addEventListener("click", closeCart);
+$("#overlay").addEventListener("click", closeCart);
+$("#browse-products").addEventListener("click", () => { closeCart(); $("#products").scrollIntoView({behavior:"smooth"}); });
+$("#member-open").addEventListener("click", () => { updateMemberUI(); openDialog("member-dialog"); });
+$("#orders-open").addEventListener("click", () => { renderOrders(); openDialog("orders-dialog"); });
+$("#member-form").addEventListener("submit", e => {
+  e.preventDefault();
+  const form = e.currentTarget;
+  member = {name: form.elements.name.value.trim(), email: form.elements.email.value.trim()};
+  saveStore(STORAGE.member, member); updateMemberUI(); closeDialog("member-dialog");
+  showToast(`歡迎來到 Mori，${member.name} ♡`);
+});
+$("#logout-button").addEventListener("click", () => {
+  member = null; saveStore(STORAGE.member, member); updateMemberUI(); closeDialog("member-dialog"); showToast("已登出展示會員");
+});
+$("#apply-coupon").addEventListener("click", () => {
+  const code = $("#coupon-input").value.trim().toUpperCase();
+  const subtotal = subtotalValue();
+  if (!code) { appliedCoupon = ""; $("#coupon-message").textContent = "已清除優惠碼。"; }
+  else if (code === "MORI50" && subtotal >= 399) { appliedCoupon = code; $("#coupon-message").textContent = "成功套用！已折抵 NT$50。"; }
+  else if (code === "SWEET10" && subtotal >= 699) { appliedCoupon = code; $("#coupon-message").textContent = "成功套用！已享 9 折優惠。"; }
+  else if (code === "MORI50" || code === "SWEET10") { appliedCoupon = ""; $("#coupon-message").textContent = code === "MORI50" ? "此優惠需商品小計滿 NT$399。" : "此優惠需商品小計滿 NT$699。"; }
+  else { appliedCoupon = ""; $("#coupon-message").textContent = "優惠碼不存在，請確認後再試。"; }
+  renderCart();
+});
+$("#checkout-button").addEventListener("click", () => {
+  if (!cart.length) return;
+  if (!member) { closeCart(); updateMemberUI(); openDialog("member-dialog"); showToast("先登入展示會員，再繼續結帳 ♡"); return; }
+  closeCart();
+  $("#checkout-form").elements.customer.value = member.name;
+  $("#checkout-form").elements.email.value = member.email;
+  updateCheckoutTotals(); openDialog("checkout-dialog");
+});
+$("#checkout-form").addEventListener("submit", e => {
+  e.preventDefault();
+  const form = e.currentTarget;
+  if (!form.reportValidity() || !cart.length) return;
+  const order = {
+    id: "MR" + Date.now().toString().slice(-8),
+    createdAt: new Date().toLocaleString("zh-TW", {hour12:false}),
+    customer: form.elements.customer.value.trim(),
+    email: form.elements.email.value.trim(),
+    address: form.elements.address.value.trim(),
+    payment: form.elements.payment.value,
+    items: cart.map(p => ({id:p.id,name:p.name,price:p.price,qty:p.qty})),
+    subtotal: subtotalValue(), coupon: appliedCoupon, discount: discountValue(), total: totalValue(),
+    status: "已建立（展示）"
+  };
+  orders.push(order); saveStore(STORAGE.orders, orders);
+  cart = []; appliedCoupon = ""; saveStore(STORAGE.cart, cart); renderCart();
+  form.reset(); closeDialog("checkout-dialog"); showToast(`展示訂單 ${order.id} 已建立！`);
+});
+$("#newsletter-form").addEventListener("submit", e => { e.preventDefault(); e.currentTarget.reset(); showToast("已收到你的訂閱示範 ♡"); });
+document.querySelectorAll("dialog").forEach(dialog => dialog.addEventListener("click", e => {
+  if (e.target === dialog) dialog.close();
+}));
+updateMemberUI(); renderProducts(); renderCart();
+
+</script>
+
+<script>
+const products = [
+  {id:3,name:"抹茶拿鐵",category:"飲品",price:130,tag:"人氣飲品",desc:"抹茶微苦與牛奶的溫柔平衡",image:"https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=700&q=85"},
+  {id:5,name:"手作餅乾禮盒",category:"禮盒",price:320,tag:"送禮首選",desc:"把剛剛好的甜，裝進小小禮盒",image:"https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=700&q=85"},
+  {id:6,name:"焦糖布丁",category:"蛋糕",price:95,tag:"療癒小點",desc:"蛋香濃郁，焦糖尾韻微苦",image:"https://images.unsplash.com/photo-1511911063855-2bf39afa5b2e?auto=format&fit=crop&w=700&q=85"},
+  {id:7,name:"冰釀拿鐵",category:"飲品",price:120,tag:"日常提神",desc:"咖啡香氣與清爽奶香交織",image:"https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=85"},
+];
+const STORAGE = {cart:"mori_cart_v2", member:"mori_member_v2", orders:"mori_orders_v2"};
+let selectedCategory = "全部";
+let cart = readStore(STORAGE.cart, []);
+let member = readStore(STORAGE.member, null);
+let orders = readStore(STORAGE.orders, []);
+let appliedCoupon = "";
+let toastTimer;
+const $ = (s) => document.querySelector(s);
+const grid = $("#product-grid");
+const toast = $("#toast");
+
+function readStore(key, fallback) {
+  try { const value = localStorage.getItem(key); return value ? JSON.parse(value) : fallback; }
+  catch { return fallback; }
+}
+function saveStore(key, value) {
+  try { localStorage.setItem(key, JSON.stringify(value)); }
+  catch { showToast("瀏覽器儲存空間無法使用，資料可能不會保留。"); }
+}
+function money(value) { return "NT$ " + Number(value).toLocaleString("zh-TW"); }
+function safeText(value) {
+  return String(value ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+}
+function showToast(message) {
+  toast.textContent = message; toast.classList.add("show");
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => toast.classList.remove("show"), 2300);
+}
+function couponDiscount(subtotal, code) {
+  if (code === "MORI50" && subtotal >= 399) return Math.min(50, subtotal);
+  if (code === "SWEET10" && subtotal >= 699) return Math.round(subtotal * 0.1);
+  return 0;
+}
+function subtotalValue() { return cart.reduce((sum, item) => sum + item.price * item.qty, 0); }
+function discountValue() { return couponDiscount(subtotalValue(), appliedCoupon); }
+function totalValue() { return Math.max(0, subtotalValue() - discountValue()); }
+
+function renderProducts() {
+  const searchInput = $("#search-input");
+  const query = String(searchInput?.value || "").trim().toLocaleLowerCase("zh-TW");
+  const filtered = products.filter(p => {
+    const categoryMatches = selectedCategory === "全部" || p.category === selectedCategory;
+    const searchMatches = !query || [p.name, p.desc, p.category]
+      .some(v => String(v ?? "").toLocaleLowerCase("zh-TW").includes(query));
+    return categoryMatches && searchMatches;
+  });
+  grid.innerHTML = filtered.map(p => `
+    <article class="product-card">
+      <div class="product-photo"><img src="${p.image}" alt="${safeText(p.name)}" loading="lazy" onerror="this.style.display='none'"><span class="product-tag">${safeText(p.tag)}</span><button type="button" class="add-button" data-add="${p.id}" aria-label="將${safeText(p.name)}加入購物車">+</button></div>
+      <div class="product-info"><span class="product-category">${safeText(p.category)} / MORI PICK</span><h3>${safeText(p.name)}</h3><p class="product-desc">${safeText(p.desc)}</p><span class="product-price">${money(p.price)}</span></div>
+    </article>`).join("");
+  const emptyState = $("#empty-state");
+  if (emptyState) {
+    emptyState.textContent = filtered.length ? "" : "找不到符合的甜點，請切換分類或清除搜尋關鍵字 ♡";
+    emptyState.classList.toggle("hidden", filtered.length > 0);
+  }
+}
+
+function addToCart(id) {
+  const item = cart.find(x => x.id === id);
+  if (item) item.qty++; else {
+    const product = products.find(p => p.id === id);
+    if (!product) return;
+    cart.push({...product, qty:1});
+  }
+  saveStore(STORAGE.cart, cart); renderCart(); showToast("已加入購物袋 ♡");
+}
+function changeQty(id, delta) {
+  const item = cart.find(x => x.id === id); if (!item) return;
+  item.qty += delta;
+  if (item.qty <= 0) cart = cart.filter(x => x.id !== id);
+  saveStore(STORAGE.cart, cart); renderCart();
+}
+function removeItem(id) {
+  cart = cart.filter(x => x.id !== id); saveStore(STORAGE.cart, cart); renderCart();
+}
+function renderCart() {
+  const count = cart.reduce((sum,p) => sum + p.qty, 0);
+  const subtotal = subtotalValue(), discount = discountValue(), total = totalValue();
+  $("#cart-count").textContent = count;
+  $("#drawer-count").textContent = `(${count})`;
+  $("#cart-subtotal").textContent = money(subtotal);
+  $("#cart-discount").textContent = "- " + money(discount);
+  $("#cart-total").textContent = money(total);
+  $("#discount-line").classList.toggle("hidden", discount <= 0);
+  $("#cart-items").innerHTML = cart.map(p => `
+    <div class="cart-row"><img src="${p.image}" alt="${safeText(p.name)}"><div><h3>${safeText(p.name)}</h3><p>${money(p.price)}</p><div class="quantity-control"><button data-qty="${p.id}" data-delta="-1" aria-label="減少數量">−</button><span>${p.qty}</span><button data-qty="${p.id}" data-delta="1" aria-label="增加數量">+</button></div></div><button class="remove-item" data-remove="${p.id}">移除</button></div>`).join("");
+  $("#cart-empty").classList.toggle("hidden", count > 0);
+  $("#cart-summary").classList.toggle("hidden", count === 0);
+  $("#coupon-input").value = appliedCoupon;
+  updateCheckoutTotals();
+}
+function updateCheckoutTotals() {
+  $("#checkout-subtotal").textContent = money(subtotalValue());
+  $("#checkout-discount").textContent = "- " + money(discountValue());
+  $("#checkout-total").textContent = money(totalValue());
+}
+function openCart() {
+  $("#cart-drawer").classList.add("open"); $("#cart-drawer").setAttribute("aria-hidden","false");
+  $("#overlay").classList.remove("hidden"); document.body.style.overflow = "hidden";
+}
+function closeCart() {
+  $("#cart-drawer").classList.remove("open"); $("#cart-drawer").setAttribute("aria-hidden","true");
+  $("#overlay").classList.add("hidden"); document.body.style.overflow = "";
+}
+function updateMemberUI() {
+  $("#member-label").textContent = member ? `嗨，${member.name}` : "會員登入";
+  $("#orders-intro").textContent = member ? `${member.name}，這裡是你在此瀏覽器建立的展示訂單。` : "請先登入展示會員，再查看此瀏覽器儲存的訂單。";
+  $("#member-title").textContent = member ? "會員資料" : "登入 Mori 會員";
+  $("#member-form").elements.name.value = member?.name || "";
+  $("#member-form").elements.email.value = member?.email || "";
+  $("#logout-button").classList.toggle("hidden", !member);
+  $("#member-form").querySelector('button[type="submit"]').textContent = member ? "更新會員資料" : "進入 Mori ♡";
+}
+function renderOrders() {
+  const list = member ? orders.filter(o => o.email.toLowerCase() === member.email.toLowerCase()) : [];
+  $("#orders-list").innerHTML = !member
+    ? '<div class="no-orders">請先登入會員，才能查看訂單。</div>'
+    : list.length === 0
+      ? '<div class="no-orders">目前還沒有訂單紀錄。<br>去挑一份喜歡的甜點吧 ♡</div>'
+      : [...list].reverse().map(o => `
+        <article class="order-card">
+          <div class="order-card-head"><strong>訂單編號 ${safeText(o.id)}</strong><span class="order-status">${safeText(o.status)}</span></div>
+          <p>建立時間：${safeText(o.createdAt)}<br>收件人：${safeText(o.customer)}<br>付款方式：${safeText(o.payment)}</p>
+          <div class="order-items">${o.items.map(i => `<p>${safeText(i.name)} × ${i.qty}　${money(i.price*i.qty)}</p>`).join("")}</div>
+          <div class="summary-line"><span>優惠折抵 ${o.coupon ? `(${safeText(o.coupon)})` : ""}</span><strong>- ${money(o.discount)}</strong></div>
+          <div class="summary-line total-line"><span>訂單金額</span><strong>${money(o.total)}</strong></div>
+        </article>`).join("");
+}
+function openDialog(id) { const d = document.getElementById(id); if (d && !d.open) d.showModal(); }
+function closeDialog(id) { const d = document.getElementById(id); if (d?.open) d.close(); }
+
+document.addEventListener("click", e => {
+  const add = e.target.closest("[data-add]"); if (add) addToCart(Number(add.dataset.add));
+  const qty = e.target.closest("[data-qty]"); if (qty) changeQty(Number(qty.dataset.qty), Number(qty.dataset.delta));
+  const remove = e.target.closest("[data-remove]"); if (remove) removeItem(Number(remove.dataset.remove));
+  const copy = e.target.closest("[data-code]");
+  if (copy) {
+    const code = copy.dataset.code; $("#coupon-input").value = code;
+    if (navigator.clipboard?.writeText) navigator.clipboard.writeText(code).then(()=>showToast(`已複製優惠碼 ${code} ♡`)).catch(()=>showToast(`優惠碼：${code}`));
+    else showToast(`優惠碼：${code}`);
+  }
+  const close = e.target.closest("[data-close-dialog]"); if (close) closeDialog(close.dataset.closeDialog);
+});
+document.querySelectorAll(".category-chip").forEach(button => button.addEventListener("click", () => {
+  selectedCategory = button.dataset.category || "全部";
+  // 切換分類時清除舊搜尋字，避免分類與搜尋條件疊加後誤顯示空清單。
+  const searchInput = $("#search-input");
+  if (searchInput) searchInput.value = "";
+  document.querySelectorAll(".category-chip").forEach(b => b.classList.toggle("active", b === button));
+  renderProducts();
+}));
+$("#search-input").addEventListener("input", renderProducts);
+$("#open-cart").addEventListener("click", openCart);
+$("#close-cart").addEventListener("click", closeCart);
+$("#overlay").addEventListener("click", closeCart);
+$("#browse-products").addEventListener("click", () => { closeCart(); $("#products").scrollIntoView({behavior:"smooth"}); });
+$("#member-open").addEventListener("click", () => { updateMemberUI(); openDialog("member-dialog"); });
+$("#orders-open").addEventListener("click", () => { renderOrders(); openDialog("orders-dialog"); });
+$("#member-form").addEventListener("submit", e => {
+  e.preventDefault();
+  const form = e.currentTarget;
+  member = {name: form.elements.name.value.trim(), email: form.elements.email.value.trim()};
+  saveStore(STORAGE.member, member); updateMemberUI(); closeDialog("member-dialog");
+  showToast(`歡迎來到 Mori，${member.name} ♡`);
+});
+$("#logout-button").addEventListener("click", () => {
+  member = null; saveStore(STORAGE.member, member); updateMemberUI(); closeDialog("member-dialog"); showToast("已登出展示會員");
+});
+$("#apply-coupon").addEventListener("click", () => {
+  const code = $("#coupon-input").value.trim().toUpperCase();
+  const subtotal = subtotalValue();
+  if (!code) { appliedCoupon = ""; $("#coupon-message").textContent = "已清除優惠碼。"; }
+  else if (code === "MORI50" && subtotal >= 399) { appliedCoupon = code; $("#coupon-message").textContent = "成功套用！已折抵 NT$50。"; }
+  else if (code === "SWEET10" && subtotal >= 699) { appliedCoupon = code; $("#coupon-message").textContent = "成功套用！已享 9 折優惠。"; }
+  else if (code === "MORI50" || code === "SWEET10") { appliedCoupon = ""; $("#coupon-message").textContent = code === "MORI50" ? "此優惠需商品小計滿 NT$399。" : "此優惠需商品小計滿 NT$699。"; }
+  else { appliedCoupon = ""; $("#coupon-message").textContent = "優惠碼不存在，請確認後再試。"; }
+  renderCart();
+});
+$("#checkout-button").addEventListener("click", () => {
+  if (!cart.length) return;
+  if (!member) { closeCart(); updateMemberUI(); openDialog("member-dialog"); showToast("先登入展示會員，再繼續結帳 ♡"); return; }
+  closeCart();
+  $("#checkout-form").elements.customer.value = member.name;
+  $("#checkout-form").elements.email.value = member.email;
+  updateCheckoutTotals(); openDialog("checkout-dialog");
+});
+$("#checkout-form").addEventListener("submit", e => {
+  e.preventDefault();
+  const form = e.currentTarget;
+  if (!form.reportValidity() || !cart.length) return;
+  const order = {
+    id: "MR" + Date.now().toString().slice(-8),
+    createdAt: new Date().toLocaleString("zh-TW", {hour12:false}),
+    customer: form.elements.customer.value.trim(),
+    email: form.elements.email.value.trim(),
+    address: form.elements.address.value.trim(),
+    payment: form.elements.payment.value,
+    items: cart.map(p => ({id:p.id,name:p.name,price:p.price,qty:p.qty})),
+    subtotal: subtotalValue(), coupon: appliedCoupon, discount: discountValue(), total: totalValue(),
+    status: "已建立（展示）"
+  };
+  orders.push(order); saveStore(STORAGE.orders, orders);
+  cart = []; appliedCoupon = ""; saveStore(STORAGE.cart, cart); renderCart();
+  form.reset(); closeDialog("checkout-dialog"); showToast(`展示訂單 ${order.id} 已建立！`);
+});
+$("#newsletter-form").addEventListener("submit", e => { e.preventDefault(); e.currentTarget.reset(); showToast("已收到你的訂閱示範 ♡"); });
+document.querySelectorAll("dialog").forEach(dialog => dialog.addEventListener("click", e => {
+  if (e.target === dialog) dialog.close();
+}));
+updateMemberUI(); renderProducts(); renderCart();
+
+</script>
+</body>
+</html>
